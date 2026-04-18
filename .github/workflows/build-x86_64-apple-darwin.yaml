@@ -11,6 +11,9 @@ on:
         required: true
         default: "v1.94.0.2"
 
+permissions:
+  contents: write
+
 jobs:
   build-xtensa-rust:
     name: Build Xtensa Rust
