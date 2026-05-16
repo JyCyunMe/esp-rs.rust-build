@@ -6,7 +6,7 @@ on:
       next_release:
         description: "Next Xtensa Rust release version"
         required: true
-        default: "v1.94.0.2"
+        default: "v1.95.0.0"
 env:
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
@@ -23,7 +23,7 @@ jobs:
           body: |
             Rust Xtensa Toolchain ${{ github.event.inputs.next_release }} for ESP32, ESP32-S2, ESP32-S3.
 
-            Installation: https://docs.esp-rs.org/book/installation/riscv-and-xtensa.html
+            Installation: https://docs.espressif.com/projects/rust/book/getting-started/toolchain.html
 
             ```
             espup install --toolchain-version ${{ steps.findandreplace.outputs.value }}
